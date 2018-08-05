@@ -1,17 +1,35 @@
 .header {
   height: 92vh;
+  margin-bottom: 8vh;
   background-image: url('../../images/scott-webb-toronto.jpg');
   background-size: cover;
   background-position: right;
   position: relative; } 
   .header__cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3.2rem;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 30rem;
-    width: 60rem;
-    background-color: var(--color-white);
+    height: 15rem;
+    width: 20rem;
+    background-color: var(--color-black);
     position: absolute;
-    z-index: 2;
-    opacity: .9;
+    border-radius: 3px;
+
+    color: white;
+    mix-blend-mode: multiply;
+
+    animation: fadeIn .6s ease-in;
+  }
+  .heading-primary {
+    font-family: cooper;
+    font-size: 7.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
   }
