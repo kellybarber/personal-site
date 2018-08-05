@@ -1,0 +1,17 @@
+.header {
+  height: 92vh;
+  background-image: url('../../images/scott-webb-toronto.jpg');
+  background-size: cover;
+  background-position: right;
+  position: relative; } 
+  .header__cover {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30rem;
+    width: 60rem;
+    background-color: var(--color-white);
+    position: absolute;
+    z-index: 2;
+    opacity: .9;
+  }
