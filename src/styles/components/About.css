@@ -1,6 +1,6 @@
 .about {
   display: flex;
-  height: 25rem; 
+  /* height: 25rem;  */
   background-color: rgb(198, 225, 230);
   border-radius: 3px;
 }
@@ -21,6 +21,13 @@
   .about__content--box {
     width: 65%;
     margin: 2rem;
+    padding: 2rem;
     background-color: white;
   }   
+    .about__content {
+      font-family: sans-serif;
+      font-size: .9rem;
+      column-count: 3;
+      column-gap: 4rem;
+    }
 
