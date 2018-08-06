@@ -1,6 +1,6 @@
 .header {
   height: 92vh;
-  margin-bottom: 8vh;
+  margin-bottom: 5vh;
   background-image: url('../../images/scott-webb-toronto.jpg');
   background-size: cover;
   background-position: right;
@@ -28,7 +28,7 @@
     animation: fadeIn .6s ease-in;
   }
   .heading-primary {
-    font-family: cooper;
+    /* font-family: cooper; */
     font-size: 7.5rem;
     font-weight: 700;
     text-transform: capitalize;

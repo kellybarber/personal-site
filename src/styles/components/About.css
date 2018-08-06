@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  height: 25rem; 
+  background-color: rgb(198, 225, 230);
+  border-radius: 3px;
+}
+  .about__header--box {
+    position: relative;
+    text-align: center;
+    width: 35%;
+    color: white;
+  }
+    .about__header {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+    }
+
+  .about__content--box {
+    width: 65%;
+    margin: 2rem;
+    background-color: white;
+  }   
+

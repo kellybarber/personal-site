@@ -6,5 +6,6 @@
 @import './layout/grid.css';
 
 /* Components */
+@import './components/About.css';
 @import './components/Navigation.css';
 @import './components/Header.css';
