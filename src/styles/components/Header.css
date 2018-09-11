@@ -1,6 +1,6 @@
 .header {
-  height: 92vh;
-  margin-bottom: 5vh;
+  height: 94vh;
+  margin-bottom: 6vh;
   background-image: url('../../images/scott-webb-toronto.jpg');
   background-size: cover;
   background-position: right;
@@ -10,26 +10,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 38rem;
+    padding: 2rem 0;
 
-    padding: 3.2rem;
-
-    top: 50%;
+    position: absolute;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 15rem;
-    width: 20rem;
-    background-color: var(--color-black);
-    position: absolute;
-    border-radius: 3px;
 
+    background-color: var(--color-black);
+    border-radius: 3px 3px 0 0;
     color: white;
     mix-blend-mode: multiply;
 
     animation: fadeIn .6s ease-in;
   }
-  .heading-primary {
-    /* font-family: cooper; */
-    font-size: 7.5rem;
-    font-weight: 700;
-    text-transform: capitalize;
+    .heading-primary {
+      width: 32rem;
+      font-size: 10rem;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+
+  .header__sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 38rem;
+    padding: 2rem 0;
+
+    position: absolute;
+    top: 71.2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--color-white); 
+    border-radius: 0 0 3px 3px;
   }
+    .heading-secondary {
+      font-size: 4rem;
+      color: var(--color-black);
+    }

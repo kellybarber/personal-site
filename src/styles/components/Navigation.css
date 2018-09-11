@@ -1,0 +1,15 @@
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__button {
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  z-index: 200;
+  box-shadow: 0 1rem 3rem rgba(var(--color-shadow), .05);
+  background: var(--color-white);
+}
