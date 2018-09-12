@@ -1,0 +1,30 @@
+.blog {
+  height: 94vh;
+  position: relative;
+  background-image: radial-gradient(var(--color-white), var(--color-black));
+}
+
+.blog__cover {
+  display: flex;
+  justify-content: center;
+  width: 28rem;
+  padding: 2rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: var(--color-black);
+  border-radius: 3px 3px 0 0;
+  color: white;
+  mix-blend-mode: multiply;
+
+  animation: fadeIn .9s ease-in;
+}
+
+.blog__cover > h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}

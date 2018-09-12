@@ -5,7 +5,7 @@ const Navigation = () => (
   <div className='navigation'>
     <input className='navigation__checkbox' type='checkbox' id='nav-toggle'/>
     <label className='navigation__button' htmlFor="nav-toggle">
-      <span class="navigation__icon"></span>
+      <span className="navigation__icon"></span>
     </label>
     <nav className='navigation__nav'>
       <div className='navigation__list'>

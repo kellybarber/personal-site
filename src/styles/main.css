@@ -8,6 +8,7 @@
 
 /* Components */
 @import './components/About.css';
+@import './components/Blog.css';
 @import './components/Header.css';
 @import './components/Navigation.css';
 @import './components/Resume.css';
