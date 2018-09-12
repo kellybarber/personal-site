@@ -11,10 +11,10 @@
     justify-content: center;
     align-items: center;
     width: 38rem;
-    padding: 2rem 0;
+    padding: 2rem 0 1rem;
 
     position: absolute;
-    top: 44%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -38,15 +38,17 @@
     justify-content: center;
     align-items: center;
     width: 38rem;
-    padding: 2rem 0;
+    padding: 1.4rem 0;
 
     position: absolute;
-    top: 71.2%;
+    top: 71.6%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     background-color: var(--color-white); 
     border-radius: 0 0 3px 3px;
+
+    animation: slideUp .85s ease-in;
   }
     .heading-secondary {
       font-size: 4rem;
