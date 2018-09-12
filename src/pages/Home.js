@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import About from '../components/About'
 
 export default () => (
-  <div>
+  <div className='home__container'>
     <Header/>
     <About/>
   </div>

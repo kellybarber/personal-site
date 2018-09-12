@@ -1,7 +1,7 @@
 .header {
   height: 94vh;
   margin-bottom: 6vh;
-  background-image: url('../../images/scott-webb-toronto.jpg');
+  background-image: url('https://res.cloudinary.com/dwf5gbyud/image/upload/v1536772085/Personal%20Site%20Assets/scott-webb-toronto.jpg');
   background-size: cover;
   background-position: right;
   position: relative; } 
@@ -23,7 +23,7 @@
     color: white;
     mix-blend-mode: multiply;
 
-    animation: fadeIn .6s ease-in;
+    animation: fadeIn .9s ease-in;
   }
     .heading-primary {
       width: 32rem;
