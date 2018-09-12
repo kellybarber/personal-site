@@ -4,8 +4,8 @@
 
 .navigation__button {
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 4rem;
+  right: 5rem;
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
@@ -21,26 +21,108 @@
   }
 
   .navigation__icon,
-  .navigation__icon::after,
-  .navigation__icon::before {
+  .navigation__icon::before,
+  .navigation__icon::after {
     width: 3rem;
     height: 2px;
     display: inline-block;
     background-color: var(--color-black);
-    transition: all .2s;
+    transition: all .4s;
   }
 
-  .navigation__icon::after,
-  .navigation__icon::before {
+  .navigation__icon::before,
+  .navigation__icon::after {
     content: '';
     position: absolute;
     left: 0;
+  }
+
+  .navigation__icon::before {
+    top: -.8rem;
   }
 
   .navigation__icon::after {
     top: .8rem;
   }
 
+  .navigation__button:hover 
   .navigation__icon::before {
-    top: -.8rem;
+    top: -1rem;
+  }
+
+  .navigation__button:hover 
+  .navigation__icon::after {
+    top: 1rem;
+  }
+
+  .navigation__checkbox:checked ~ 
+  .navigation__button {
+    box-shadow: none;
+  }
+
+  .navigation__checkbox:checked ~ 
+  .navigation__button 
+  .navigation__icon {
+    background-color: transparent;
+  }
+
+  .navigation__checkbox:checked ~ 
+  .navigation__button 
+  .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  .navigation__checkbox:checked ~ 
+  .navigation__button 
+  .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+.navigation__nav {
+  position: fixed;
+  top: 4rem;
+  right: 5rem;
+  height: 6rem;
+  width: 6rem;
+  z-index: 100;
+  
+  border-radius: 50%;
+  background-color: var(--color-white);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all .4s;
+}
+  .navigation__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    padding: 0 4rem 0 1rem;
+  }
+
+    .navigation__link {
+      font-size: 1rem;
+      text-decoration: none;
+      color: var(--color-black);
+    }
+
+  .navigation__checkbox:checked ~ 
+  .navigation__nav {
+    width: 35rem;
+    border-radius: 4.5rem;
+    box-shadow: 0 1rem 3rem rgba(var(--color-shadow), .05);
+
+    opacity: 1;
+    visibility: initial;
+  }
+
+  .navigation__checkbox:checked ~
+  .navigation__nav
+  .navigation__list 
+  .navigation__link {
+    font-size: 1.8rem;
   }
