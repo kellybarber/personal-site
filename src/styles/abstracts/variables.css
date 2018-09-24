@@ -3,5 +3,8 @@
   --color-black: #000;
   --color-link: #4799B7;
 
+  --font-primary: 'Times New Roman', Times, serif;
+  --font-secondary: 'Didact Gothic', sans-serif;
+
   --color-shadow: 0,0,0;
 }
