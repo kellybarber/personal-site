@@ -81,24 +81,71 @@
   background-color: rgba(var(--color-shadow), 0.8);
 }
 
+/* Modal Content */
 .work-modal__content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  height: 50rem;
-  width: 70rem;
+  display: flex;
+
+  height: 85%;
+  width: 92%;
 
   border-radius: 2px;
   background-color: white;
 }
 
+/* Modal Text */
+.work-modal__text {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+}
+
+.work-modal__title {
+  padding: 4rem;
+  background-color: var(--color-black);
+  color: white;
+}
+
 /* Modal Photos */
 .work-modal__photos {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0 2px 2px 0;
+  background-color: #DBDBDB;
 }
 
 .work-modal__photos > img {
-  width: 100%;
+  width: 88%;
+  margin: 0 1.4rem;
+}
+
+.work-modal__photos > button {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  transition: all .2s;
+}
+
+.work-modal__photos > button:hover {
+  transform: scale(1.1);
+}
+
+.work-modal__photos > button:active {
+  transform: scale(1.04);
+}
+
+.work-modal__photos > button > svg {
+  height: 3rem;
+  width: 3rem;
+  fill: none;
+  stroke: var(--color-black);
 }

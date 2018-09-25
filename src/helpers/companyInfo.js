@@ -1,10 +1,14 @@
 
 export const defaultInfo = {
+  text: { title: '' },
   logo: '',
   photos: []
 }
 
 export const werk = {
+  text: {
+    title: 'Werk Technologies'
+  },
   logo: 'https://res.cloudinary.com/dwf5gbyud/image/upload/v1537899193/Personal%20Site%20Assets/Werk/werk-logo.jpg',
   photos: [
     'https://res.cloudinary.com/dwf5gbyud/image/upload/v1537909238/Personal%20Site%20Assets/Werk/werker-home.jpg',
