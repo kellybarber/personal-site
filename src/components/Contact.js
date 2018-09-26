@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
+import ContactForm from './ContactForm'
 
-class Contact extends Component {
-  render() {
-    return (
-      <div>
-
-      </div>
-    )
-  }
-}
-
-export default Contact
+export default () => (
+  <div className='contact'>
+    <div className='contact-title'>
+      <h1>contact</h1>
+    </div>
+    <div className='contact-form__container'>
+      <ContactForm/>
+    </div>
+  </div>
+)

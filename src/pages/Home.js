@@ -9,5 +9,6 @@ export default () => (
     <Header/>
     <About/>
     <Work/>
+    <Contact/>
   </div>
 )
