@@ -2,11 +2,7 @@ import React from 'react'
 
 export const leftArrow = (
   <svg 
-    xmlns="http://www.w3.org/2000/svg" 
     viewBox="0 0 24 24" 
-    stroke-width="2" 
-    stroke-linecap="round" 
-    stroke-linejoin="round"
   >
     <circle cx="12" cy="12" r="10"></circle>
     <polyline points="12 8 8 12 12 16"></polyline>
@@ -16,11 +12,7 @@ export const leftArrow = (
 
 export const rightArrow = (
   <svg 
-    xmlns="http://www.w3.org/2000/svg" 
     viewBox="0 0 24 24" 
-    stroke-width="2" 
-    stroke-linecap="round" 
-    stroke-linejoin="round" 
   >
     <circle cx="12" cy="12" r="10"></circle>
     <polyline points="12 16 16 12 12 8"></polyline>

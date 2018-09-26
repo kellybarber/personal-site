@@ -106,6 +106,7 @@
 
 .work-modal__title {
   padding: 4rem;
+  font-size: 1.2rem;
   background-color: var(--color-black);
   color: white;
 }
@@ -119,11 +120,15 @@
 
   border-radius: 0 2px 2px 0;
   background-color: #DBDBDB;
+
+  transition: all .2s;
 }
 
 .work-modal__photos > img {
   width: 88%;
   margin: 0 1.4rem;
+
+  animation: fadeIn .4s;
 }
 
 .work-modal__photos > button {
@@ -148,4 +153,16 @@
   width: 3rem;
   fill: none;
   stroke: var(--color-black);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round; 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

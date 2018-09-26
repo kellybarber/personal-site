@@ -5,12 +5,22 @@ class WorkModalGallery extends Component {
 
   state = { photoIndex: 0 }
 
-  handleSlideRight = () => {
-    
+  handleSlideLeft = () => {
+    const { photoIndex } = this.state
+
+    if (photoIndex > 0) {
+      this.setState({ photoIndex: photoIndex - 1 })
+    }
+
   }
 
-  handleSlideLeft = () => {
+  handleSlideRight = () => {
+    const { photoIndex } = this.state
+    const stop = this.props.photos.length - 1
 
+    if (photoIndex < stop) {
+      this.setState({ photoIndex: photoIndex + 1 })
+    }
   }
 
   render() {
@@ -18,9 +28,9 @@ class WorkModalGallery extends Component {
 
     return (
       <div className='work-modal__photos'>
-        <button>{leftArrow}</button>
+        <button onClick={this.handleSlideLeft}>{leftArrow}</button>
         <img src={this.props.photos[this.state.photoIndex]} alt=''/>
-        <button>{rightArrow}</button>
+        <button onClick={this.handleSlideRight}>{rightArrow}</button>
       </div>
     )
   }
