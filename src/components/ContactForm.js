@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
+import { sendMail } from '../helpers/icons'
 
 class ContactForm extends Component {
 
   state = { name: '', email: '', message: '' }
 
   handleInput = e => {
-    console.log(e.target)
-    
+    const name = e.target.name
+    const value = e.target.value
+
+    this.setState({ [name]: value })
   }
 
   onSubmit = e => {
@@ -23,6 +26,7 @@ class ContactForm extends Component {
         <div className='contact-form__inputs'>
           <div className='contact-form__credentials'>
             <input 
+              className='contact-form__input'
               type='text'
               placeholder='Name'
               name='name'
@@ -30,14 +34,16 @@ class ContactForm extends Component {
               onChange={this.handleInput}
             />
             <input 
-              type='text'
+              className='contact-form__input'
+              type='email'
               placeholder='Email'
               name='email'
               value={email}
               onChange={this.handleInput}
             />
           </div>
-        <input 
+        <textarea 
+          className='contact-form__message'
           type='text'
           placeholder='Message'
           name='message'
@@ -45,7 +51,9 @@ class ContactForm extends Component {
           onChange={this.handleInput}
         />
       </div>
-      <button>Send</button>
+      <button className='contact-form__send'>
+        {sendMail}
+      </button>
     </form>
     )
   }
