@@ -4,7 +4,6 @@
   height: 30rem;
 
   border-radius: 2px;
-  /* box-shadow: inset 0 0 3rem .8rem rgba(var(--color-shadow), 0.2);  */
 }
 
 .contact-title {
@@ -91,6 +90,7 @@
 
 /* Button */
 .contact-form__send {
+  outline: none;
   height: 4.4rem;
   width: 4.4rem;
   padding: .4rem .4rem 0 0;

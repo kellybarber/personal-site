@@ -113,7 +113,7 @@
     }
     .navigation__link:hover {
       color: var(--color-link);
-      transform: translateY(-2px);
+      transform: translateY(-1px);
     }
 
   .navigation__checkbox:checked ~ 

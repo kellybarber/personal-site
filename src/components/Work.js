@@ -23,7 +23,7 @@ class Work extends Component {
     return (
       <div className='work'>
         <div className='work-title'>
-          <h1>Work Experience</h1>
+          <h1>work</h1>
         </div>
         <div className='work-shelf'> 
           <WorkCard info={werk} handleShowModal={this.handleShowModal}/>
