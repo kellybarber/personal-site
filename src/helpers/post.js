@@ -12,7 +12,7 @@ export default async (url, body) => {
     const data = response.json()
     if (!response.ok) throw data
 
-    console.log(data)
+    return data
 
   } catch (error) {
     console.log(error)

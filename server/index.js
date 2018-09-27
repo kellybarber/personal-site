@@ -7,7 +7,7 @@ const send = require('./routes/send')
 
 app.use(express.static(publicPath))
 
-app.use('/send', send)
+app.use('/api/send', send)
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'))

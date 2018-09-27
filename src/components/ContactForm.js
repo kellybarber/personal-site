@@ -13,13 +13,13 @@ class ContactForm extends Component {
     this.setState({ [name]: value })
   }
 
-  onSubmit = e => {
+  onSubmit = async e => {
     e.preventDefault()
     const { name, email, message } = this.state
     
-    const response = post('/send/mail', { name, email, message })
+    const response = await post('/api/send/mail', { name, email, message })
+
     console.log(response)
-    
   }
 
   render() {
