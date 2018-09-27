@@ -3,8 +3,11 @@ const app = express()
 const port = process.env.PORT || 3001
 const path = require('path')
 const publicPath = path.join(__dirname, '..', 'build')
+const send = require('./routes/send')
 
 app.use(express.static(publicPath))
+
+app.use('/send', send)
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'))

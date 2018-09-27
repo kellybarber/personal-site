@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { sendMail } from '../helpers/icons'
+import post from '../helpers/post'
 
 class ContactForm extends Component {
 
@@ -14,7 +15,10 @@ class ContactForm extends Component {
 
   onSubmit = e => {
     e.preventDefault()
-    console.log('submit')
+    const { name, email, message } = this.state
+    
+    const response = post('/send/mail', { name, email, message })
+    console.log(response)
     
   }
 
