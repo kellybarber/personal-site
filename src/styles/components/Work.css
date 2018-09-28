@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
 
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
   padding: 4.4rem 2rem;
 
   box-shadow: inset 0 0 3rem .8rem rgba(var(--color-shadow), 0.2); 
@@ -121,14 +121,23 @@
 .work-modal__text {
   display: flex;
   flex-direction: column;
-  width: 30rem;
+  width: 34rem;
 }
 
 .work-modal__title {
-  padding: 4rem;
+  padding: 3.6rem 4.6rem;
   font-size: 1.2rem;
   background-color: var(--color-black);
   color: white;
+}
+
+.work-modal__summary {
+  padding: 2.6rem;
+}
+
+.work-modal__summary > p {
+  font-size: 1.25rem;
+  font-family: var(--font-secondary);
 }
 
 /* Modal Photos */
