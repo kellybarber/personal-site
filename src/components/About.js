@@ -11,6 +11,9 @@ export default () => (
         web apps. I have experience drafting themes and layouts and implementing them with CSS, as well as 
         experience building out complex modern front-end systems with JavaScript.
       </p>
+      <div className='about-social'>
+
+      </div>
     </div>
   </div>
 )
