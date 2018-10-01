@@ -19,7 +19,7 @@ class ContactForm extends Component {
     
     const response = await post('/api/send/mail', { name, email, message })
 
-    console.log(response)
+    this.setState({ name: '', email: '', message: '' })
   }
 
   render() {
