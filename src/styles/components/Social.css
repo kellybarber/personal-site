@@ -1,0 +1,36 @@
+.social {
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 6rem;
+  padding: 1.4rem;
+  background-color: var(--color-black);
+}
+
+.social__button {
+  display: flex;
+  align-items: center;
+  padding: .8rem 1rem;
+
+  background: none;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white;
+}
+
+.social__button > span {
+  padding-left: 1rem;
+  font-family: var(--font-secondary);
+  font-size: 1.4rem;
+}
+
+.social__button > svg {
+  height: 2rem;
+  width: 2rem;
+
+  fill: var(--color-white);
+  stroke: var(--color-white);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

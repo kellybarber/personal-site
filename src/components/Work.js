@@ -23,7 +23,7 @@ class Work extends Component {
     return (
       <div className='work'>
         <div className='work-title'>
-          <h1>professional projects</h1>
+          <h1>{this.props.title}</h1>
         </div>
         <div className='work-shelf'> 
           <WorkCard info={werk} handleShowModal={this.handleShowModal}/>
