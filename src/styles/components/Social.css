@@ -2,20 +2,38 @@
   display: flex;
   justify-content: space-around;
 
-  margin-bottom: 6rem;
-  padding: 1.4rem;
-  background-color: var(--color-black);
+  margin-bottom: 10rem;
+  padding: 1.6rem;
+  border: .4rem solid var(--color-black);
+  border-radius: 2px;
+
+  box-shadow: 0 0 3rem 1rem rgba(var(--color-shadow), 0.2); 
 }
 
 .social__button {
   display: flex;
   align-items: center;
-  padding: .8rem 1rem;
+  padding: 1rem 1.4rem;
 
+  outline: none;
+  text-decoration: none;
   background: none;
-  border: 1px solid white;
+  background-color: black;
+  border: none;
   border-radius: 2px;
   color: white;
+  cursor: pointer;
+
+  transition: all .3s;
+}
+
+.social__button:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 2rem .4rem rgba(var(--color-shadow), 0.2);
+}
+
+.social__button:active {
+  transform: scale(1.01);
 }
 
 .social__button > span {

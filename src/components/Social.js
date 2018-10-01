@@ -3,11 +3,11 @@ import { gitHub, linkedIn } from '../helpers/icons'
 
 export default () => (
   <div className='social'>
-    <button className='social__button'>
+    <a className='social__button' href='https://github.com/kellybarber' target='_blank'>
       {gitHub} <span>GitHub</span>
-    </button>
-    <button className='social__button'>
+    </a>
+    <a className='social__button' href='https://linkedin.com/in/kellyjamesbarber/' target='_blank'>
       {linkedIn} <span>LinkedIn</span>
-    </button> 
+    </a> 
   </div>
 )
