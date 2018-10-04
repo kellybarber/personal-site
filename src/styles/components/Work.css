@@ -121,6 +121,7 @@
 .work-modal__text {
   display: flex;
   flex-direction: column;
+  overflow: auto;
   width: 34rem;
 }
 
@@ -132,12 +133,22 @@
 }
 
 .work-modal__summary {
-  padding: 2.6rem;
+  padding: 2rem 2.6rem;
 }
 
 .work-modal__summary > p {
   font-size: 1.25rem;
   font-family: var(--font-secondary);
+}
+
+.work-modal__summary > p > a {
+  font-family: inherit;
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+.work-modal__summary > p > a:hover {
+  text-decoration: underline;
 }
 
 /* Modal Photos */

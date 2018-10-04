@@ -3,6 +3,7 @@ const nodemailer = require('nodemailer')
 exports.sendMail = async (req, res) => {
   try {
     const { name, email, message } = req.body
+    if ( !name || !email || !message ) throw 'Please Fill Out All Fields'
 
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -20,15 +21,12 @@ exports.sendMail = async (req, res) => {
       replyTo: email
     }
     
-    const response = await transporter.sendMail(mailOptions)
+    await transporter.sendMail(mailOptions)
 
-    console.log(response)
-    
-
-    res.send({'what': 'it is'})
+    res.send({ response: 'Your Email Has Been Sent', type: 'success' })
 
   } catch (error) {
     console.log('Send Mail Error: ', error)
-    
+    res.send({ response: error, type: 'error' })
   }
 }

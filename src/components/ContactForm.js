@@ -4,7 +4,7 @@ import post from '../helpers/post'
 
 class ContactForm extends Component {
 
-  state = { name: '', email: '', message: '' }
+  state = { name: '', email: '', message: '', response: '' }
 
   handleInput = e => {
     const name = e.target.name
@@ -17,13 +17,14 @@ class ContactForm extends Component {
     e.preventDefault()
     const { name, email, message } = this.state
     
-    const response = await post('/api/send/mail', { name, email, message })
-
-    this.setState({ name: '', email: '', message: '' })
+    const { response, type } = await post('/api/send/mail', { name, email, message })
+    
+    if (type === 'success') this.setState({ name: '', email: '', message: '', response })
+    else this.setState({ response })
   }
 
   render() {
-    const { name, email, message } = this.state
+    const { name, email, message, response } = this.state
 
     return (
       <form className='contact-form' onSubmit={this.onSubmit}>
