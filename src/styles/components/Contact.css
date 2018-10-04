@@ -1,7 +1,7 @@
 .contact {
   display: flex;
   align-items: center;
-  height: 30rem;
+  height: 36rem;
   margin-bottom: 4rem;
 
   border-radius: 2px;
@@ -88,7 +88,6 @@
   color: var(--color-grey);
 }
 
-
 /* Button */
 .contact-form__send {
   outline: none;
@@ -117,4 +116,15 @@
   stroke-width: 2;
   stroke-linecap: round; 
   stroke-linejoin: round;
+}
+
+/* Response */
+.contact-form__response {
+  height: 2rem;
+  margin: 1rem 1.2rem;
+
+  font-size: 1.2rem;
+  font-weight: 200;
+  font-family: var(--font-secondary);
+  color: white;
 }

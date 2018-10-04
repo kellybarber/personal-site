@@ -8,8 +8,8 @@ import Contact from '../components/Contact'
 export default () => (
   <div className='home__container'>
     <Header/>
-    <About/>
     <Social/>
+    <About/>
     <Work title='professional projects' />
     <Contact/>
   </div>

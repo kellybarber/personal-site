@@ -23,7 +23,7 @@ exports.sendMail = async (req, res) => {
     
     await transporter.sendMail(mailOptions)
 
-    res.send({ response: 'Your Email Has Been Sent', type: 'success' })
+    res.send({ response: 'Your Email Has Been Sent!', type: 'success' })
 
   } catch (error) {
     console.log('Send Mail Error: ', error)

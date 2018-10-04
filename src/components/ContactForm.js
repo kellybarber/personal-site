@@ -55,6 +55,7 @@ class ContactForm extends Component {
           value={message}
           onChange={this.handleInput}
         />
+        <div className='contact-form__response'>{response}</div>
       </div>
       <button className='contact-form__send'>
         {sendMail}
