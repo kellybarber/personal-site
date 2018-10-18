@@ -8,9 +8,9 @@ import Contact from '../components/Contact'
 export default () => (
   <div className='home__container'>
     <Header/>
-    <Social/>
+    <Work title='Professional Projects' />
     <About/>
-    <Work title='professional projects' />
+    <Social/>
     <Contact/>
   </div>
 )
